@@ -7,7 +7,10 @@ public class CubeControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
+       // private float walkingSpeed = 0.2f;
+
+
     }
 
     // Update is called once per frame
@@ -18,13 +21,13 @@ public class CubeControl : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
             transform.position -= transform.forward * Time.deltaTime;
         if (Input.GetKey(KeyCode.E))
-            transform.position -=transform.right * Time.deltaTime;
+            transform.position +=transform.right * Time.deltaTime;
         if (Input.GetKey(KeyCode.Q))
-            transform.position += transform.right * Time.deltaTime;
-        if (Input.GetKey(KeyCode.A))
-            transform.Rotate (Vector3.up, 20 * Time.deltaTime);
+            transform.position -= transform.right * Time.deltaTime;
         if (Input.GetKey(KeyCode.D))
-            transform.Rotate(Vector3.up, -20 * Time.deltaTime);
+            transform.Rotate (Vector3.up, 40 * Time.deltaTime);
+        if (Input.GetKey(KeyCode.A))
+            transform.Rotate(Vector3.up, -40 * Time.deltaTime);
 
     }
 }
