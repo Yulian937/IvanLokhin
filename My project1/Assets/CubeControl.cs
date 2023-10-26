@@ -16,11 +16,11 @@ public class CubeControl : MonoBehaviour
         if (Input.GetKey(KeyCode.W))   
             transform.position += transform.forward * Time.deltaTime;
         if (Input.GetKey(KeyCode.S))
-            transform.position += transform.backw * Time.deltaTime;
+            transform.position -= transform.forward * Time.deltaTime;
         if (Input.GetKey(KeyCode.E))
-            transform.position += (new Vector3(5, 0, 0)) * Time.deltaTime;
+            transform.position -=transform.right * Time.deltaTime;
         if (Input.GetKey(KeyCode.Q))
-            transform.position += (new Vector3(-5, 0, 0)) * Time.deltaTime;
+            transform.position += transform.right * Time.deltaTime;
         if (Input.GetKey(KeyCode.A))
             transform.Rotate (Vector3.up, 20 * Time.deltaTime);
         if (Input.GetKey(KeyCode.D))
