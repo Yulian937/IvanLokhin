@@ -123,6 +123,44 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71445051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7412150707985410894, guid: 95af161f0a9c43a4c81f16c8a0246169, type: 3}
+  m_PrefabInstance: {fileID: 7412150707452115878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &71445055
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71445051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13302681
+  m_Height: 1.0369513
+  m_Direction: 1
+  m_Center: {x: 0.00069235265, y: 0.5009892, z: 0.0066995914}
+--- !u!1 &195300138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7412150707985410894, guid: 95af161f0a9c43a4c81f16c8a0246169, type: 3}
+  m_PrefabInstance: {fileID: 412951809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &195300142
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195300138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13302681
+  m_Height: 1.0369513
+  m_Direction: 1
+  m_Center: {x: 0.00069235265, y: 0.5009892, z: 0.0066995914}
 --- !u!1 &378867753
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,13 +460,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.249, y: 3.928, z: 0.291}
+  m_LocalPosition: {x: 4.15, y: 3.928, z: -1.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &895179884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7412150707985410894, guid: 95af161f0a9c43a4c81f16c8a0246169, type: 3}
+  m_PrefabInstance: {fileID: 429743541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &895179888
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895179884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13302681
+  m_Height: 1.0369513
+  m_Direction: 1
+  m_Center: {x: 0.00069235265, y: 0.5009892, z: 0.0066995914}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +915,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62a03f178dc5d40458a985fb41cf382d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1834220853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7412150707985410894, guid: 95af161f0a9c43a4c81f16c8a0246169, type: 3}
+  m_PrefabInstance: {fileID: 1244150944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1834220857
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834220853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13302681
+  m_Height: 1.0369513
+  m_Direction: 1
+  m_Center: {x: 0.00069235265, y: 0.5009892, z: 0.0066995914}
 --- !u!1 &1908773113
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +1032,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908773113}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2012521323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7412150707985410894, guid: 95af161f0a9c43a4c81f16c8a0246169, type: 3}
+  m_PrefabInstance: {fileID: 1678273976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2012521327
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012521323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.13302681
+  m_Height: 1.0369513
+  m_Direction: 1
+  m_Center: {x: 0.00069235265, y: 0.5009892, z: 0.0066995914}
 --- !u!1001 &7412150707452115878
 PrefabInstance:
   m_ObjectHideFlags: 0
