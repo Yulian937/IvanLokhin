@@ -1,53 +1,49 @@
+
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BallControlScript : MonoBehaviour
 {
+
+
     Rigidbody rb;
-    float kickStrenghts = 800;
+    float kickStrenght = 1000;
     // Start is called before the first frame update
     void Awake()
     {
-        
-        rb= GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
-    
 
     // Update is called once per frame
     void Update()
-    {   if (Input.GetMouseButton(0))
-        {
-            KickBall(transform);
-        }
-
-        
-
-    }
-
-    public void KickBall(Transform kicker)
     {
-        rb.AddExplosionForce(kickStrenghts, kicker.position, 4);
-      
 
     }
+    public void Kickball(Transform kicker)
+    {
+        rb.AddExplosionForce(kickStrenght, kicker.position, 4);
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Plane")
-        { print("Boing!"); }
+        { }
 
         else
         {
-            zombieControlScript testIfZombie = collision.gameObject.GetComponent<zombieControlScript>();
+            ZombieControlScript testIfZombie = collision.gameObject.GetComponent<ZombieControlScript>();
             if (testIfZombie != null)
             {
                 testIfZombie.dieNow();
+                CubeControl cubeScript = GameObject.FindObjectOfType<CubeControl>();
+                cubeScript.balls += 5;
             }
-            print("Ouch!");
 
-            KickBall(collision.transform);
+            Kickball(collision.transform);
         }
+
     }
 }
